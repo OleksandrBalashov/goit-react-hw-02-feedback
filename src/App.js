@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Statistics from '../Statistics';
+import Statistics from './components/Statistics';
 import PropTypes from 'prop-types';
-import FeedbackOptions from '../Feedback-options';
-import Section from '../Section';
-import './Main.css';
+import FeedbackOptions from './components/Feedback-options';
+import Section from './components/Section';
+import './styles.css';
 
-
-class Main extends Component {
+class App extends Component {
     static defaultProps = {
         initialGood: 0,
         initialNeutral: 0,
@@ -90,4 +89,4 @@ class Main extends Component {
     };
 };
 
-export default Main;
+export default App;
