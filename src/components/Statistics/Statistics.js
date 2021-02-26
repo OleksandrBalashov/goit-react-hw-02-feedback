@@ -6,7 +6,6 @@ import styles from './Statistics.module.css'
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <>
         <h2>Statistic</h2>
-
         {total ?
             (
                 <div className={styles.wrap}>
@@ -26,11 +25,17 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
 );
 
 Statistics.defaultProps = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
     total: 0,
     positivePercentage: 0,
 };
 
 Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
     total: PropTypes.number.isRequired,
     positivePercentage: PropTypes.number.isRequired,
 };
