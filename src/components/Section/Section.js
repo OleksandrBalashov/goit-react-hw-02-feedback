@@ -1,20 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Section = ({ heading ,children }) => (
-    <section>
-        <h2>{heading}</h2>
-        {children}
-    </section>
+const Section = ({ heading, children }) => (
+  <section>
+    <h2>{heading}</h2>
+    {children}
+  </section>
 );
 
-Section.defaultProps = {
-    heading: ''
-};
-
 Section.propTypes = {
-    heading: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
 };
 
 export default Section;
-
